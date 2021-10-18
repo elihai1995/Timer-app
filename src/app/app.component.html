@@ -1,0 +1,81 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+  
+  .image{
+    height: 100vh;
+    width: 100%; 
+    background-size: cover;
+    background-image: url('assets/stopwatch.png');
+  }
+
+</style>
+
+<div class="image">
+
+<!-- Toolbar -->
+<div class="toolbar">
+  <img
+    width="65"
+    src="assets/Elihai.png"
+  />
+  <span>Welcome, Elihai Ben Avraham</span>
+    <div class="spacer"></div>
+    {{ myDate | date: "d MMMM y"}},
+    {{ myDate | date: "HH:mm"}}
+    <img
+    width="60"
+    src="assets/EBA.png"
+  />
+  <img
+  width="50"
+  src="assets/HTA.png"
+/>
+</div>
+
+<div class="content">
+
+  <!-- Highlight Card -->
+  <div class="card highlight-card card-small">
+
+    <img class="img"
+    src="assets/timer.jpg"
+  />
+
+    <span>The {{ title }} is running!</span>
+
+    <img class="img"
+    src="assets/timer.jpg"
+  />
+
+  </div>
+</div>
+   <hr />
+<div>
+		  <!-- reusable component with contol options -->
+      <app-timer [start]="_start" [showTimerControls]="true"></app-timer>
+	  </div>
+</div>
+
+	  <!-- use these buttons for custom functionality  -->
+  	<!-- <div>
+		  <button (click)="_start = true">Start</button>
+		  <button (click)="_start = false">Clear</button>
+	  </div> -->
+
+  
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
