@@ -1,0 +1,39 @@
+.container {
+    text-align: center;
+    font-family: Lato;
+    color: white;
+  }
+  .timer-counter-label{
+    align-items: center;
+    font-size: 27px;
+    color: white;
+  }
+  .timer-start-text{
+    font-size: 20px;
+  }
+  .timer-button{
+        outline: none;
+        cursor: pointer;
+        border: 1px solid #d21919;
+        border-radius: 5px;
+        background: #d21919;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        margin: 5px 10px;
+        min-width: 100px;
+  }
+  .timer-button:hover{
+    background: #e91a1a;
+    border: 1px solid #e91a1a;
+  }
+  .disabled{
+    cursor: not-allowed;
+    background-color: #6c757d;
+    border:1px solid #6c757d;
+  }
+  .disabled:hover{
+    cursor: not-allowed;
+    background-color: #5a6268;
+    border:1px solid #545b62;
+  }
