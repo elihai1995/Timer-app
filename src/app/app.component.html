@@ -1,0 +1,159 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+  :host {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    color: #333;
+  }
+
+  .spacer {
+    flex: 1;
+  }
+
+  .image{
+    height: 100vh;
+    width: 100%; 
+    background-size: cover;
+    background-image: url('assets/stopwatch.png');
+  }
+
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    background-color: #d21919;
+    color: white;
+    font-weight: 600;
+  }
+
+  .toolbar img {
+    margin: 0 16px;
+  }
+
+  .content {
+    margin: 82px auto 1px;
+    max-width: 300px;
+  }
+  .img {
+    width: 41px;
+    margin-left: 6px;
+  }
+
+  .card {
+    margin: 0 1px 16px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 24px;
+  }
+
+  .card.card-small {
+    height: 16px;
+  }
+
+  .card.highlight-card {
+    background-color: #d21919;
+    color: white;
+    font-weight: 600;
+    border: none;
+    width: auto;
+    position: relative;
+  }
+
+  .card.card.highlight-card span {
+    margin-left: 10px;
+  }
+
+  .terminal {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    padding-top: 45px;
+    margin-top: 8px;
+    background-color: rgb(15, 15, 16);
+  }
+
+  /* Responsive Styles */
+  @media screen and (max-width: 767px) {
+    .card-container > *:not(.circle-link) ,
+    .terminal {
+      width: 100%;
+    }
+  }
+
+</style>
+
+<div class="image">
+
+<!-- Toolbar -->
+<div class="toolbar">
+  <img
+    width="65"
+    src="assets/Elihai.png"
+  />
+  <span>Welcome, Elihai Ben Avraham</span>
+    <div class="spacer"></div>
+    {{ myDate | date: "d MMMM y"}},
+    {{ myDate | date: "HH:mm"}}
+    <img
+    width="60"
+    src="assets/EBA.png"
+  />
+  <img
+  width="50"
+  src="assets/HTA.png"
+/>
+</div>
+
+<div class="content">
+
+  <!-- Highlight Card -->
+  <div class="card highlight-card card-small">
+
+    <img class="img"
+    src="assets/timer.jpg"
+  />
+
+    <span>The {{ title }} is running!</span>
+
+    <img class="img"
+    src="assets/timer.jpg"
+  />
+
+  </div>
+</div>
+   <hr />
+<div>
+		  <!-- reusable component with contol options -->
+      <app-timer [start]="_start" [showTimerControls]="true"></app-timer>
+	  </div>
+</div>
+
+	  <!-- use these buttons for custom functionality  -->
+  	<!-- <div>
+		  <button (click)="_start = true">Start</button>
+		  <button (click)="_start = false">Clear</button>
+	  </div> -->
+
+  
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
