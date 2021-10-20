@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Demo
 
-Checkout the demo on StackBlitz - https://mklibrnpm.github.stackblitz.io/
+Checkout the demo on StackBlitz - https://stackblitz.com/github/elihai1995/timer-app
 
 ## Development server
 
