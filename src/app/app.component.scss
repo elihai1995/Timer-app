@@ -8,6 +8,12 @@
     flex: 1;
   }
 
+  .image{
+    height: calc(100vh - 90px);
+    width: 100%; 
+    background-size: cover;
+  }
+
   .toolbar {
     position: absolute;
     top: 0;
